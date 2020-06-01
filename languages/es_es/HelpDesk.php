@@ -16,6 +16,8 @@
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
+	'C'	=> 'Cliente',
+	'M' => 'Manicurista',
 	'HelpDesk'                     => 'Incidencias',
 	'SINGLE_HelpDesk'              => 'Incidencia',
 	'LBL_ADD_RECORD'               => 'Añadir Incidencia',

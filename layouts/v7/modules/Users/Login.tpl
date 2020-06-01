@@ -11,7 +11,8 @@
 {strip}
 	<style>
 		body {
-			background-image: url("https://cloud.vtiger.com.co/layouts/v7/resources/Images/background-vtiger.jpg");
+			/*background-image: url("https://cloud.vtiger.com.co/layouts/v7/resources/Images/background-vtiger.jpg");*/
+			background-color: #e21c69;
 			background-position: center;
 			background-size: cover;
 			width: 100%;
@@ -36,11 +37,11 @@
 			padding: 10px 10px 10px 0px;
 			-webkit-appearance: none;
 			display: block;
-			color: #9cbd04;
+			color: #e21c69;
 			width: 100%;
 			border: none;
 			border-radius: 0;
-			border-bottom: 1px solid #9cbd04;
+			border-bottom: 1px solid #e21c69;
 		}
 		input:focus {
 			outline: none;
@@ -74,8 +75,8 @@
 			width: 380px;
 			margin: 0 auto;
 			border-radius: 4px;
-			box-shadow: 0 0 10px gray;
-			background-color: rgba(0, 56, 88, 0.8);
+			box-shadow: 0 0 10px #f3f3f3;
+			background-color: #f3f3f3;
 		}
 		.marketingDiv {
 			color: #303030;
@@ -169,7 +170,7 @@
 			outline: 0;
 		}
 		.buttonBlue {
-			background-image: linear-gradient(to bottom, #9cbd04 0px, #9cbd04 100%)
+			background-image: linear-gradient(to bottom, #e21c69 0px, #e21c69 100%)
 		}
 		.ripples {
 			position: absolute;
@@ -238,8 +239,8 @@
 						</div>
 					</form>
 					<p style="margin-top: 38px; color:#fff;">
-						<a class="forgotPasswordLink">Recuperar contraseña?</a>
-						<a href="https://cloud.vtiger.com.co/registro.php" class="forgotPasswordLink pull-right">Crear Cuenta</a>
+						<!-- <a class="forgotPasswordLink">Recuperar contraseña?</a>
+						<a href="https://cloud.vtiger.com.co/registro.php" class="forgotPasswordLink pull-right">Crear Cuenta</a> -->
 					</p>
 				</div>
 

@@ -9,7 +9,7 @@
 
 <footer class="app-footer">
 	<p>
-		Desarrollado por IteraSoft S.A.S - 1.0.0&nbsp;&nbsp;© 2018
+		Desarrollado por IteraSoft S.A.S - 1.0.0&nbsp;&nbsp;© 2020
 <!--
 		<a href="//www.iterasoft.co" target="_blank">vTiger</a>&nbsp;|&nbsp;
 		<a href="https://www.vtiger.com/privacy-policy" target="_blank">Privacy Policy</a>

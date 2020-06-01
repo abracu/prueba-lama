@@ -9,6 +9,7 @@
  *************************************************************************************/
 
 require_once 'modules/Emails/mail.php';
+include_once 'api/integration.php';
 
 class HelpDeskHandler extends VTEventHandler {
 
@@ -18,8 +19,28 @@ class HelpDeskHandler extends VTEventHandler {
 		if($eventName == 'vtiger.entity.aftersave.final') {
 			$moduleName = $entityData->getModuleName();
 			if ($moduleName == 'HelpDesk') {
+				$lst = getQuestionsStarsDictionary();
+				foreach($lst[$entityData->get('cf_882')]['answers'] as $answers) {
+					if (decode_html($entityData->get('cf_884')) == decode_html($answers['answer']))
+						$question_star_id = $answers['id'];
+				}
+				
 				$ticketId = $entityData->getId();
 				$adb->pquery('UPDATE vtiger_ticketcf SET from_portal=0 WHERE ticketid=?', array($ticketId));
+				
+				$fields = array('id'=>getCoreId('HelpDesk',$entityData->getId()),
+								'order_id'=>getCoreId('Potentials',$entityData->get('potential_id')),
+								//'service_id'=>126950,
+								'customer_id'=>getCoreId('Accounts',$entityData->get('parent_id')),
+								'manicurist_id'=>getCoreId('Vendors',$entityData->get('vendor_id')),
+								'customer_date_rating'=> date('d-m-Y'),
+								'type'=> $entityData->get('ticketcategories'),
+								'observation' => $entityData->get('description'),
+								'question_star_id'=>$question_star_id,
+								'star_number'=>$entityData->get('cf_882'),
+								"deleted"=>0);
+
+				setUpdateCalification($fields,$entityData->getId());
 			}
 		}
 	}

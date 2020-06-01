@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^auth$ index.php?mode=auth [L]
+RewriteRule ^customer$ index.php?mode=customer [L]
+RewriteRule ^professional$ index.php?mode=professional [L]
+RewriteRule ^order$ index.php?mode=order [L]
+RewriteRule ^orderRating$ index.php?mode=orderRating [L]
+

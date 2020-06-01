@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-01-24 04:48:39
+<?php /* Smarty version Smarty-3.1.7, created on 2020-03-04 17:45:43
          compiled from "/var/www/html/crm/includes/runtime/../../layouts/v7/modules/Vtiger/Footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:15441714195e2a6edeed7728-71742931%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0e88cb3f24d790e933981d3bd7cc5d096d87d63d' => 
     array (
       0 => '/var/www/html/crm/includes/runtime/../../layouts/v7/modules/Vtiger/Footer.tpl',
-      1 => 1579841029,
+      1 => 1583343939,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <footer class="app-footer">
 	<p>
-		Desarrollado por IteraSoft S.A.S - 1.0.0&nbsp;&nbsp;© 2018
+		Desarrollado por IteraSoft S.A.S - 1.0.0&nbsp;&nbsp;© 2020
 <!--
 		<a href="//www.iterasoft.co" target="_blank">vTiger</a>&nbsp;|&nbsp;
 		<a href="https://www.vtiger.com/privacy-policy" target="_blank">Privacy Policy</a>
